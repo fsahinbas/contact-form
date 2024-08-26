@@ -76,7 +76,7 @@ const ContactUsPage = () => {
               />
               {errors.firstName?.message && (
                 <span className="error body-s">
-                  {errors.firstName?.message}
+                  {errors.firstName?.message.toString()}
                 </span>
               )}
             </div>
@@ -90,7 +90,9 @@ const ContactUsPage = () => {
                 className="form-control"
               />
               {errors.lastName?.message && (
-                <span className="error body-s">{errors.lastName?.message}</span>
+                <span className="error body-s">
+                  {errors.lastName?.message.toString()}
+                </span>
               )}
             </div>
           </div>
@@ -105,7 +107,9 @@ const ContactUsPage = () => {
                 className="form-control"
               />
               {errors.email?.message && (
-                <span className="error body-s">{errors.email?.message}</span>
+                <span className="error body-s">
+                  {errors.email?.message.toString()}
+                </span>
               )}
             </div>
           </div>
@@ -143,7 +147,7 @@ const ContactUsPage = () => {
               </div>
               {errors.queryType?.message && (
                 <span className="error body-s">
-                  {errors.queryType?.message}
+                  {errors.queryType?.message.toString()}
                 </span>
               )}
             </div>
@@ -161,7 +165,9 @@ const ContactUsPage = () => {
                 id="message"
               />
               {errors.message?.message && (
-                <span className="error body-s">{errors.message?.message}</span>
+                <span className="error body-s">
+                  {errors.message?.message.toString()}
+                </span>
               )}
             </div>
           </div>
@@ -181,7 +187,9 @@ const ContactUsPage = () => {
                 </label>
               </div>
               {errors.consent?.message && (
-                <span className="error body-s">{errors.consent?.message}</span>
+                <span className="error body-s">
+                  {errors.consent?.message.toString()}
+                </span>
               )}
             </div>
           </div>
